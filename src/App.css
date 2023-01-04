@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: blue;
+} */
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
