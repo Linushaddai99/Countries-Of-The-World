@@ -31,3 +31,9 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+.country {
+    text-align: left;
+    background-color: transparent;
+    cursor: pointer;
+}

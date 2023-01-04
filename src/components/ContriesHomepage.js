@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import getCountries from '../redux/api';
-import CountriesList from './ContriesList'
+import CountriesList from './ContriesList';
 
 const ContriesHomepage = () => {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries.countries);
 
-  console.log(countries)
+  console.log(countries);
 
   useEffect(() => {
     if (countries.length === 0) {
@@ -18,10 +18,9 @@ const ContriesHomepage = () => {
   return (
     <div>
       <h1>Where in the World</h1>
-      <CountriesList countries={countries}/>
+      <CountriesList countries={countries} />
     </div>
-  )
-}
+  );
+};
 
-export default ContriesHomepage
-
+export default ContriesHomepage;
