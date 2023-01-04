@@ -15,17 +15,6 @@ const ContriesHomepage = () => {
     }
   }, [dispatch, countries.length]);
 
-//     const newCountries = countries.sort(function (a, b) {
-//     if (a > b) {
-//         return -1;
-//     }
-//     if (b > a) {
-//         return 1;
-//     }
-//     return 0;
-// });
-//   console.log(newCountries)
-
   return (
     <div>
       <h1>Where in the World</h1>
