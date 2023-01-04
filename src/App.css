@@ -10,9 +10,13 @@
     background-color: blue;
 } */
 
+img {
+    max-width: 100%;
+}
+
 .countries-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: 50px;
     gap: 30px;
 }
@@ -20,4 +24,10 @@
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+.details {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
 }
