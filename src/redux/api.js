@@ -11,5 +11,3 @@ const getCountries = createAsyncThunk('Countries-Of-The-World/getCountries', asy
 });
 
 export default getCountries;
-
-// https://restcountries.com/v3.1/all
