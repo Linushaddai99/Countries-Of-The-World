@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const ContriesDetailsPage = () => {
   const location = useLocation();
@@ -7,6 +7,13 @@ const ContriesDetailsPage = () => {
 
   return (
     <>
+      <Link to="/">
+        <button type="button" className="back">
+          {'<'}
+          {' '}
+          Back to countries
+        </button>
+      </Link>
       <h3 className="details-name">{data.name}</h3>
       <div className="details">
         <div className="details-content">

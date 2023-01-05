@@ -72,6 +72,23 @@ img {
   align-items: center;
 }
 
+.back {
+  font-family: 'Poppins', sans-serif;
+  background-color: #001845;
+  color: #979dac;
+  border: 1px solid #001845;
+  font-size: 12px;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.back:hover {
+  background-color: #002855;
+}
+
 .details-content + .details-content {
   margin-left: 30px;
 }
