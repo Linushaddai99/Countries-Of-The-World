@@ -17,7 +17,9 @@ const ContriesHomepage = () => {
     }
   }, [dispatch, countries.length]);
 
-  const newCountries = countries.filter((country) => (country.name.toLowerCase().includes(searchItem.toLowerCase()) || country.region.toLowerCase().includes(searchItem.toLowerCase())));
+  const newCountries = countries.filter((country) => (
+    country.name.toLowerCase().includes(searchItem.toLowerCase())
+    || country.region.toLowerCase().includes(searchItem.toLowerCase())));
 
   const handleSearch = (e) => {
     e.preventDefault();
