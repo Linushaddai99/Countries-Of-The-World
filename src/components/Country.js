@@ -10,23 +10,24 @@ const Country = ({ data }) => {
 
   return (
     <button type="button" onClick={handleRoute} className="country">
-      <img className="country-img" src={data.flag} alt="Country Flag" />
-      <h2>{data.name}</h2>
-      <p>
-        Population:
-        <span>{data.population}</span>
-      </p>
-      <p>
-        Continent:
-        <span>{data.region}</span>
-      </p>
-      <p>
-        Capital:
-        <span>{data.capital}</span>
-      </p>
-      {/* <p>.</p>
-      <p>.</p>
-      <p>click for more details</p> */}
+      <div className="img-holder">
+        <img className="country-img" src={data.flag} alt="Country Flag" />
+      </div>
+      <div className="section-2">
+        <h2>{data.name}</h2>
+        <p>
+          Population:
+          <span className="lighter">{data.population}</span>
+        </p>
+        <p>
+          Continent:
+          <span className="lighter">{data.region}</span>
+        </p>
+        <p>
+          Capital:
+          <span className="lighter">{data.capital}</span>
+        </p>
+      </div>
     </button>
   );
 };

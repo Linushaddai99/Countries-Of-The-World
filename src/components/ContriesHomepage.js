@@ -9,8 +9,6 @@ const ContriesHomepage = () => {
 
   const [searchItem, setSearchItem] = useState('');
 
-  console.log(countries);
-
   useEffect(() => {
     if (countries.length === 0) {
       dispatch(getCountries());
@@ -28,8 +26,7 @@ const ContriesHomepage = () => {
 
   return (
     <div>
-      <h1>Where in the World</h1>
-      <input type="text" name="searchItem" placeholder="search for a country" value={searchItem} onChange={handleSearch} />
+      <input className="search-bar" type="text" name="searchItem" placeholder="search for a country" value={searchItem} onChange={handleSearch} />
       {searchItem.length ? <CountriesList countries={newCountries} />
         : <CountriesList countries={countries} />}
 

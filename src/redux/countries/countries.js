@@ -16,5 +16,4 @@ const countriesSlice = createSlice({
   },
 });
 
-//   export const { bookReservation, cancelReservation } = countrieslice.actions;
 export default countriesSlice.reducer;
