@@ -8,11 +8,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
+    "dotenv": "^16.0.3",
+    "enzyme": "^3.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
+    "react-router": "^6.6.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
+    "react-test-renderer": "^18.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -50,6 +54,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "redux-mock-store": "^1.5.4",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
