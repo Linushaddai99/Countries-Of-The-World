@@ -52,7 +52,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Countries Of The World <a name="about-project"></a>
+# 🌏Countries Of The World <a name="about-project"></a>
 
 In this web application, users are able to see all the countries in the world on the homepage, filter countries by region, click on a country to see more information, search for a country and toggle dark and light modes. 
 
