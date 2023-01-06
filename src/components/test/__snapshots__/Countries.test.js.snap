@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays all the countries from the api should display all the countries 1`] = `
+<div>
+  <div>
+    <input
+      class="search-bar"
+      name="searchItem"
+      placeholder="search for a country"
+      type="text"
+      value=""
+    />
+    <div
+      class="countries-grid"
+    />
+  </div>
+</div>
+`;
