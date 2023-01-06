@@ -10,10 +10,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <div className="container">
-        {/* <ContriesHomepage /> */}
         <Routes>
           <Route path="/" element={<ContriesHomepage />} />
-          <Route path="/details/:id" element={<CountriesDetailsPage />} />
+          <Route path="/:id" element={<CountriesDetailsPage />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -5,7 +5,7 @@ const Country = ({ data }) => {
   const navigate = useNavigate();
 
   const handleRoute = () => {
-    navigate(`/details/${data.name}`, { state: data });
+    navigate(`/${data.name}`, { state: data });
   };
 
   return (
