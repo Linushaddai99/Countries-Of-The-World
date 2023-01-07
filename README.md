@@ -104,7 +104,7 @@ In this web application, users are able to see all the countries in the world on
 
 <!-- > Add a link to your deployed project. -->
 
-- [Live Demo Link](https://countries-the-world.onrender.com)
+- [Live Demo Link](https://linus-countries.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,7 +220,8 @@ Give a ⭐️ If you like this project...
 
 <!-- > Give credit to everyone who inspired your codebase. -->
 
-I would like to thank Microverse for the project inspiration.
+- I would like to thank Microverse for the project inspiration.
+- I would also like to thank Nelson Sakwa for the original design idea.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

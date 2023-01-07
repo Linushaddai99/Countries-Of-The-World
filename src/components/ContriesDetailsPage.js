@@ -1,5 +1,6 @@
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import DetailsHeader from './DetailsHeader';
 
 const ContriesDetailsPage = () => {
   const location = useLocation();
@@ -7,20 +8,15 @@ const ContriesDetailsPage = () => {
 
   return (
     <>
-      <Link to="/">
-        <button type="button" className="back">
-          {'<'}
-          {' '}
-          Back to countries
-        </button>
-      </Link>
-      <h3 className="details-name">{data.name}</h3>
-      <div className="details">
-        <div className="details-content">
-          <img src={data.flag} alt="Country flag" />
-        </div>
-        <div className="details-content">
-          {
+      <DetailsHeader />
+      <div className="container">
+        <h2>{data.name}</h2>
+        <div className="details">
+          <div className="details-content">
+            <img src={data.flag} alt="Country flag" />
+          </div>
+          <div className="details-content">
+            {
             data.nativeName
               ? (
                 <p>
@@ -29,7 +25,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.population
               ? (
                 <p>
@@ -38,7 +34,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.region
               ? (
                 <p>
@@ -47,7 +43,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.subregion
               ? (
                 <p>
@@ -56,7 +52,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.capital
               ? (
                 <p>
@@ -65,9 +61,9 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-        </div>
-        <div className="details-content">
-          {
+          </div>
+          <div className="details-content">
+            {
             data.currencies
               ? (
                 <p>
@@ -76,7 +72,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.timezones
               ? (
                 <p>
@@ -85,7 +81,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.topLevelDomain
               ? (
                 <p>
@@ -94,7 +90,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.languages
               ? (
                 <p>
@@ -103,7 +99,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
-          {
+            {
             data.borders
               ? (
                 <p>
@@ -112,6 +108,7 @@ const ContriesDetailsPage = () => {
                 </p>
               ) : ''
           }
+          </div>
         </div>
       </div>
     </>

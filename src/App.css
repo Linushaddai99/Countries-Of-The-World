@@ -11,21 +11,38 @@
 body {
   background-color: #001233;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   top: 0;
   z-index: 100;
-  padding: 14px 10%;
+  padding: 20px 10%;
   background-color: #001845;
+  color: #979dac;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon + .icon {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 header a {
-  color: #979dac;
   text-decoration: none;
+  color: #979dac;
+}
+
+header h2 {
+  color: white;
 }
 
 .search-bar {
@@ -56,8 +73,7 @@ img {
 .countries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
-  margin-top: 50px;
-  gap: 30px;
+  margin-top: 30px;
 }
 
 .container {
@@ -73,11 +89,9 @@ img {
 }
 
 .back {
-  font-family: 'Poppins', sans-serif;
-  background-color: #001845;
-  color: #979dac;
+  font-family: 'Lato', sans-serif;
   border: 1px solid #001845;
-  font-size: 12px;
+  font-size: 15px;
   outline: none;
   padding: 5px;
   cursor: pointer;
@@ -121,21 +135,15 @@ img {
   text-align: left;
   background-color: #001845;
   cursor: pointer;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #001233;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   transition: scale 250ms ease-in-out;
 }
 
 .country:hover {
-  scale: 1.025;
+  scale: 0.9;
   border: 1px solid #979dac;
-}
-
-.country img {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .section-2 {
@@ -154,13 +162,26 @@ img {
   padding-left: 5px;
 }
 
-@media (max-width: 530px) {
+@media (max-width: 456px) {
   .countries-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
+  header h2 {
+    font-size: 16px;
+  }
+
+  .icon,
+  .back {
+    font-size: smaller;
+  }
+
+  .icon + .icon {
+    margin-left: 13px;
+  }
+
   .container {
     width: 90%;
   }

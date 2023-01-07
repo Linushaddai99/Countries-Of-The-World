@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import getCountries from '../redux/api';
 import CountriesList from './ContriesList';
+import HomeHeader from './HomeHeader';
 
 const ContriesHomepage = () => {
   const dispatch = useDispatch();
@@ -25,12 +26,14 @@ const ContriesHomepage = () => {
   };
 
   return (
-    <div>
-      <input className="search-bar" type="text" name="searchItem" placeholder="search for a country" value={searchItem} onChange={handleSearch} />
-      {searchItem.length ? <CountriesList countries={newCountries} />
-        : <CountriesList countries={countries} />}
-
-    </div>
+    <>
+      <HomeHeader />
+      <div className="container">
+        <input className="search-bar" type="text" name="searchItem" placeholder="search for a country" value={searchItem} onChange={handleSearch} />
+        {searchItem.length ? <CountriesList countries={newCountries} />
+          : <CountriesList countries={countries} />}
+      </div>
+    </>
   );
 };
 
